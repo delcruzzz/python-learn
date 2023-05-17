@@ -43,3 +43,39 @@ range(1, 11) # da la lista de números en el rango que se especificó
 [1, 2, 3, 4, 5].reverse() # vuelve a la lista organizada al revés o en orden contrario
 [1, 2, 3, 4, 5].sort() # vuelve a la lista ordenada
 [1, 2, 3, 4, 5].extend([6, 7, 8]) # modifica la lista y le añade la lista señalada
+
+## cortar listas y otras cosas
+[1, 2, 3, 4, 5][2:] # corta la lista desde la posición incicada hasta el final
+[1, 2, 3, 4, 5][1:3] # recorta la lista en un intervalo desde la posición incicada hasta la final, sin contar esta
+1 in [1, 2, 3, 4, 5] # verificar si un elemento se encuentra en la lista
+[1, 2, 3, 4, 5][0] = 0 # cambiar un elemento en una posición indicada
+
+## algunos métodos de los diccionarios
+{"name": "leonardo", "lastname": "de la cruz"}.pop("name") # elimina un elemento en concreto por medio de su key
+{"name": "leonardo", "lastname": "de la cruz"}.popitem() # eliminar el último elemento del diccionario
+{"name": "leonardo", "lastname": "de la cruz"}.clear() # limpia completamente el diccionario
+{"name": "leonardo", "lastname": "de la cruz"}.copy() # crea una copia exacta del diccionario
+{"name": "leonardo", "lastname": "de la cruz"}.keys() # retorna una lista con todas las llaves dentro del diccionario
+{"name": "leonardo", "lastname": "de la cruz"}.values() # retorna una lista con todos los valores dentro del diccionario
+
+## otras cosas con diccionarios
+{"name": "leonardo", "lastname": "de la cruz"}["name"] # acceder al valor por medio de su key
+{"name": "leonardo", "lastname": "de la cruz"}["age"] = 19 # añadir un nuevo elemento al diccionario con una key
+"lname" in {"name": "leonardo", "lastname": "de la cruz"} # verificar si un elemento está en el diccionario
+
+"""
+    así mismo es para las tuplas, aunque tiene muy pocos ya que son inmutables
+"""
+
+## algunos métodos de los sets
+{1, 2, 3, 4, 5}.add(6) # agregar un elemento al set
+{1, 2, 3, 4, 5}.update(6, 7, 8) # permite añadir más de un elemento al set
+{1, 2, 3, 4, 5}.remove(5) # remueve un elemento en concreto señalado del set
+{1, 2, 3, 4, 5}.pop() # elimina un elemento aleatorio del set
+{1, 2, 3, 4, 5}.clear() # limpia por completo el set
+{1, 2, 3, 4, 5}.union({6, 7, 8, 9}) # permite unir dos sets
+{1, 2, 3, 4, 5}.intersection({1, 6, 8, 2}) # permite saber cuales son los elementos en común de los dos sets
+{1, 2, 3, 4, 5}.difference({1, 9, 6, 3}) # permite saber cuales son los elementos diferentes de los dos sets
+
+## otras cosas con sets
+2 in {1, 2, 3, 4, 5} # verifica si existe el elemento en el set
